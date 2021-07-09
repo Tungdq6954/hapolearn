@@ -1,71 +1,65 @@
-@mixin fontText {
-    font-family: Open Sans;
+.header {
+    position: relative;
+    background: #ffffff;
+    height: 125px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     /* identical to box height */
-
     text-transform: uppercase;
-
     color: #505353;
-}
-.header {
-    position: absolute;
-    height: 150px;
-    top: 0%;
-    bottom: 0%;
-    border: 1px solid;
-    background: #ffffff;
 
-    .navbar_style {
-        @include fontText;
+    .navbar-style {
         position: absolute;
-        top: 0%;
-        bottom: 0%;
         left: 0%;
         right: 0%;
+        top: 0%;
+        bottom: 0%;
 
-        .style_img {
-            position: absolute;
-            width: 340.16px;
-            height: 70px;
-            left: 8.96%;
-            right: 67.42%;
-            top: 24%;
-            bottom: 29.33%;
+        .navbar-brand-img {
+            margin-left: 85px;
+            height: 87px;
+            width: 340.15625px;
+            border-radius: 0px;
         }
+    }
 
-        .HOME_text {
-            position: absolute;
-            left: 59.38%;
-            right: 37.64%;
-            top: 43.33%;
-            bottom: 44%;
-        }
+    .header-navbar-collapse {
+        margin-right: 100px;
+    }
 
-        .ALL_COURSES_text {
-            position: absolute;
-            left: 66.18%;
-            right: 27.36%;
-            top: 43.33%;
-            bottom: 44%;
-        }
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: #505353;
+    }
 
-        .LOGIN_REGISTER_text {
-            position: absolute;
-            left: 76.11%;
-            right: 15.83%;
-            top: 43.33%;
-            bottom: 44%;
-        }
+    .navbar-light .navbar-nav .active>.nav-link:hover {
+        color: #ffffff;
+        background: #b2d235;
+        border-radius: 17px;
+    }
 
-        .PROFILE_text {
-            position: absolute;
-            left: 86.6%;
-            right: 9.38%;
-            top: 43.33%;
-            bottom: 44%;
+    @media only screen and (max-width: 769px) {
+        height: 190px;
+    }
+
+    @media only screen and (max-width: 415px) {
+        height: 150px;
+    }
+}
+
+
+.header-navbar-collapse {
+    li {
+        margin-right: 20px;
+    }
+}
+
+.row {
+    .be-center {
+        @media only screen and (max-width: 769px) {
+            padding-left: 128px;
         }
     }
 }
