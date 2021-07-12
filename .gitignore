@@ -1,1 +1,7 @@
-css/
+css/style.css
+css/style.css.map
+index.html
+scss/style.scss
+scss/_header.scss
+scss/_footer.scss
+scss/_body.scss
