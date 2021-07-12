@@ -1,5 +1,9 @@
 .footer {
     position: relative;
-    height: 308px;
+    height: auto;
     background: #505353;
+
+    .foot-div {
+        position: relative;
+    }
 }
