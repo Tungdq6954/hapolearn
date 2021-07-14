@@ -1,15 +1,14 @@
 .header {
   position: relative;
-  background: #ffffff;
+  background: $white_color;
   height: 110px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font_Open_Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   text-transform: uppercase;
-  color: #505353;
+  color: $text_color;
 
   .header-navbar-collapse {
     margin-right: 100px;
@@ -17,39 +16,16 @@
     li {
       margin-right: 20px;
     }
-
-    @media only screen and (max-width: 769px) {
-      position: absolute;
-      top: 63%;
-      left: 18%;
-    }
-
-    @media only screen and (max-width: 415px) {
-      position: absolute;
-      z-index: 100;
-      background: white;
-      width: 100%;
-      left: 0%;
-      top: 98%;
-    }
   }
 
   .navbar-light .navbar-nav .active > .nav-link {
-    color: #505353;
+    color: $text_color;
   }
 
   .navbar-light .navbar-nav .active > .nav-link:hover {
-    color: #ffffff;
-    background: #b2d235;
+    color: $white_color;
+    background: $title_color;
     border-radius: 17px;
-  }
-
-  @media only screen and (max-width: 769px) {
-    height: 160px;
-  }
-
-  @media only screen and (max-width: 415px) {
-    height: 90px;
   }
 }
 
@@ -74,17 +50,47 @@
     background-image: url(../assets/img/Hapo_Learn.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
 
-    /* border: 1px solid; */
-    @media only screen and (max-width: 769px) {
+@media only screen and (max-width: 769px) {
+  .header {
+    height: 160px;
+
+    .header-navbar-collapse {
+      position: absolute;
+      top: 63%;
+      left: 18%;
+    }
+  }
+
+  .navbar-style {
+    .navbar-brand-img {
       height: 61.73633575439453px;
       width: 300px;
       position: absolute;
       top: 8%;
       left: 18%;
     }
+  }
+}
 
-    @media only screen and (max-width: 415px) {
+@media only screen and (max-width: 415px) {
+  .header {
+    height: 90px;
+
+    .header-navbar-collapse {
+      position: absolute;
+      z-index: 100;
+      background: white_color;
+      width: 100%;
+      left: 0%;
+      top: 98%;
+    }
+  }
+
+  .navbar-style {
+    .navbar-brand-img {
       height: 45px;
       width: 218px;
       position: absolute;
@@ -92,42 +98,30 @@
       left: 4%;
     }
   }
-}
 
-.header-navbar-collapse {
-  .home-txt {
-    @media only screen and (max-width: 415px) {
-      padding-left: 40%;
+  .header-navbar-collapse {
+    .home-txt {
       height: 69px;
       font-size: 20px;
       margin-left: 5%;
       line-height: 55px;
     }
-  }
 
-  .all-courses-txt {
-    @media only screen and (max-width: 415px) {
-      padding-left: 29%;
+    .all-courses-txt {
       height: 69px;
       font-size: 20px;
       margin-left: 5%;
       line-height: 55px;
     }
-  }
 
-  .login-register-txt {
-    @media only screen and (max-width: 415px) {
-      padding-left: 25%;
+    .login-register-txt {
       height: 69px;
       font-size: 20px;
       margin-left: 5%;
       line-height: 55px;
     }
-  }
 
-  .profile-txt {
-    @media only screen and (max-width: 415px) {
-      padding-left: 37%;
+    .profile-txt {
       height: 69px;
       font-size: 20px;
       margin-left: 5%;
