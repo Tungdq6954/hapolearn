@@ -226,8 +226,8 @@
     }
 
     .content-course {
-      font-size: 16px;
-      margin: 0;
+      font-size: 14px;
+      margin: 0 15px 10px 15px;
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 4;
@@ -235,7 +235,8 @@
     }
 
     .button-course {
-      margin: 0;
+      margin: 0 auto 39px auto;
+      font-size: 11px;
     }
   }
 }
@@ -274,6 +275,49 @@
       width: 258px;
       height: 40px;
       line-height: 33px;
+    }
+  }
+
+  .main-courses {
+    .custom-card-row {
+      margin-top: -122px;
+      padding-top: 35px;
+    }
+  }
+
+  .custom-card-style {
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    .img-frontend-course {
+      @include img-course-at-769px();
+    }
+
+    .img-laravel-course {
+      @include img-course-at-769px();
+    }
+
+    .img-php-course {
+      @include img-course-at-769px();
+    }
+
+    .title-course {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .content-course {
+      font-size: 14px;
+      margin: 0 31px 10px 31px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .button-course {
+      margin: 0 auto 39px auto;
+      font-size: 11px;
     }
   }
 }
