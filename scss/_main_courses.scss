@@ -8,7 +8,7 @@
 
 .custom-card-style {
   font-family: $font_UTM_BryantLG;
-  background: #ffffff;
+  background: $white_color;
   box-shadow: 0px 0px 10px $hapo_learn_banner_box_shadow_color;
   border-radius: 15px;
 
@@ -113,18 +113,6 @@
   .custom-card-style {
     margin-left: 40px;
     margin-right: 40px;
-
-    .img-frontend-course {
-      @include img-course-at-769px();
-    }
-
-    .img-laravel-course {
-      @include img-course-at-769px();
-    }
-
-    .img-php-course {
-      @include img-course-at-769px();
-    }
 
     .title-course {
       font-size: 16px;
