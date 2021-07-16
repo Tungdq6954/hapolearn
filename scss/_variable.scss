@@ -6,16 +6,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "utm-bryantlg";
-  src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
-      format("woff"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
-      format("opentype"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
-      format("truetype");
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
 $font_Open_Sans: "Open Sans", sans-serif;
@@ -36,7 +26,6 @@ $css_course_color: #24ABE2;
 $rails_course_color: #e73d2c;
 $java_course_color: #1B75BB;
 $view_all_courses: #90AB26;
-
 
 @mixin img-course {
   width: 100%;
