@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "utm_bryantlgregular";
+  src: url(../assets/fonts/utm_bryantlg-webfont.woff2) format("woff2"),
+    url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "utm-bryantlg";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
+      format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
+      format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM BryantLG.ttf")
+      format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+$font_Open_Sans: "Open Sans", sans-serif;
+$font_UTM_BryantLG: "utm_bryantlgregular";
+$white_color: #ffffff;
+$text_color: #505353;
+$title_color: #b2d235;
+$button_color: #b2d235;
+$button_hover_color: #748b18;
+$hapo_learn_titile_color: #11114e;
+$frontend_course_color: #3f6185;
+$laravel_course_color: #dc594c;
+$php_course_color: #556598;
+$hapo_learn_banner_background_color: #e5e5e5;
+$hapo_learn_banner_box_shadow_color: rgba(0, 0, 0, 0.25);
+$main_courses_box_shadow: #6f8710;
+
+@mixin img-course {
+  width: 100%;
+  height: 45%;
+  box-shadow: 0px 0px 10px $hapo_learn_banner_box_shadow_color;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: scale-down;
+}
+
+@mixin img-course-at-769px {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
