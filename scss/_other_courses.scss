@@ -17,10 +17,7 @@
   }
 
   .custom-card-style {
-    font-family: $font_UTM_BryantLG;
-    background: $white_color;
-    box-shadow: 0px 0px 10px $hapo_learn_banner_box_shadow_color;
-    border-radius: 15px;
+    @include custom-card-style-mixin();
   }
 
   a.view-all-courses {
@@ -60,42 +57,15 @@
   }
 
   .title-course {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 37px;
-    letter-spacing: -0.05em;
-    color: $title_color;
-    margin: 10px 10px 10px 10px;
+    @include title-course-mixin();
   }
 
   .content-course {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.05em;
-    color: $text_color;
-    margin: 10px 40px 10px 40px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    @include content-course-mixin();
   }
 
   .button-course {
-    display: flex;
-    width: 60%;
-    height: 20%;
-    background: $button_color;
-    box-shadow: inset 0px 1.5px 2px $main_courses_box_shadow;
-    border-radius: 22px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: $white_color;
-    font-weight: bold;
-    margin-top: 12px;
-    margin-bottom: -22px;
+    @include button-course-mixin();
 
     &:hover {
       background: $button_hover_color;
@@ -132,17 +102,11 @@
     }
 
     .content-course {
-      font-size: 14px;
-      margin: 0 15px 10px 15px;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
+      @include content-course-in-769px();
     }
 
     .button-course {
-      margin: 0 auto 39px auto;
-      font-size: 11px;
+      @include button-course-in-769px();
     }
 
     a.view-all-courses {
