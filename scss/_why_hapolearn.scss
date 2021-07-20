@@ -1,0 +1,132 @@
+.why-hapolearn {
+  width: 100%;
+  position: relative;
+  background-image: url(../assets/img/rectangle_17.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 637px;
+  margin-top: 90px;
+  font-family: $font_UTM_BryantLG;
+
+  .img-laptop {
+    background-image: url(../assets/img/mb_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 478px;
+    height: 478px;
+    top: -28%;
+  }
+
+  .title-why-hapolearn {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 86px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $white_color;
+    margin-top: 220px;
+  }
+
+  .reasons-for-why-hapolearn {
+    display: flex;
+    flex-direction: column;
+
+    .each-reason {
+      color: $white_color;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.05em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .img-laptop-ipad-iphone-coffee {
+    background-image: url(../assets/img/transparent_1911160_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    filter: drop-shadow(0px 4px 4px $hapo_learn_banner_box_shadow_color);
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .why-hapolearn {
+    height: 440px;
+
+    .img-laptop {
+      width: 300px;
+      height: 300px;
+    }
+
+    .title-why-hapolearn {
+      font-size: 50px;
+      width: 98vw;
+      position: relative;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 10;
+      top: 8%;
+    }
+
+    .reasons-for-why-hapolearn {
+      margin-top: 94px;
+
+      .each-reason {
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+    }
+
+    .img-laptop-ipad-iphone-coffee {
+      height: 246px;
+      margin-top: 180px;
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .why-hapolearn {
+    height: 620px;
+
+    .img-laptop {
+      width: 300px;
+      height: 300px;
+      top: -22%;
+    }
+
+    .title-why-hapolearn {
+      font-size: 40px;
+      width: 55vw;
+      height: auto;
+      position: relative;
+      top: 7px;
+      line-height: 40px;
+      text-align: start;
+      left: 16%;
+    }
+
+    .reasons-for-why-hapolearn {
+      margin-top: 0;
+      position: relative;
+      top: 42px;
+
+      .each-reason {
+        font-size: 14px;
+        margin-bottom: 13px;
+        line-height: 17px;
+      }
+    }
+
+    .img-laptop-ipad-iphone-coffee {
+      height: 246px;
+      margin-top: 0;
+      position: relative;
+      top: -23px;
+    }
+  }
+}
