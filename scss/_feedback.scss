@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
   width: 100%;
-  height: 660px;
+  height: 544px;
   font-family: $font_UTM_BryantLG;
 
   .feedback-titile {
@@ -164,6 +164,8 @@
 
 @media only screen and (max-width: 415px) {
   .feedback {
+    height: 469px;
+
     .feedback-titile {
       font-size: 50px;
     }
