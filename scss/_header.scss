@@ -61,13 +61,16 @@
     .custom-navbar-collapse {
       position: absolute;
       left: 0%;
-      top: 52px;
+      top: 44px;
       width: 100%;
       margin-left: 0;
+      height: 100vh;
 
       a {
         justify-content: center;
         display: flex;
+        height: 60px;
+        align-items: center;
       }
     }
 

@@ -33,6 +33,17 @@ $vertical_in_comment: #D9DADC;
 $arrow_color: #C4C4C4;
 $footer_bottom_color: #454545;
 
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
 @mixin img-course {
   width: 100%;
   height: 45%;
