@@ -1,0 +1,158 @@
+.logo-messenger {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url(../assets/img/messenger.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.chatbox {
+  font-family: $font_Open_Sans;
+  position: absolute;
+  width: 360px;
+  height: 190px;
+  background: white;
+  box-shadow: 0px 0px 8px $hapo_learn_banner_box_shadow_color;
+  border-radius: 23px;
+  z-index: 100;
+
+  .close-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: $arrow_color;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+  }
+
+  .hapolearn-txt-in-chatbox {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: $hapolearn_txt_in_chatbox;
+    padding-top: 15px;
+    padding-left: 64px;
+  }
+
+  .button-messenger {
+    display: block;
+    width: 276px;
+    height: 37px;
+    background: $button_message_color;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29px;
+    cursor: pointer;
+  }
+
+  .chat-with-hapolearn-in-messenger-txt {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $chat_with_hapolearn_in_messenger_txt;
+    margin-top: 10px;
+  }
+}
+
+.message-from-hapolearn {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  padding-left: 12px;
+
+  .hapo-logo-in-message {
+    width: 35px;
+    height: 35px;
+    background-image: url(../assets/img/hapo_logo_message.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    ;
+    margin-top: 15px;
+    margin-right: 11px;
+  }
+
+  .hapo-text-message {
+    display: flex;
+    width: 256px;
+    height: 53px;
+    background: $background_message;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: $text_color;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.chatbox-appear-on-top {
+  top: 419px;
+  right: 33px;
+}
+
+.chatbox-appear-on-bottom {
+  top: 676px;
+  right: 33px;
+}
+
+@media only screen and (max-width: 769px) {
+  .logo-messenger {
+    width: 50px;
+    height: 50px;
+    top: 580px;
+  }
+
+  .chatbox-appear-on-top {
+    top: 394px;
+    right: 33px;
+  }
+
+  .chatbox-appear-on-bottom {
+    top: 626px;
+    right: 33px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .logo-messenger {
+    top: 516px;
+    right: 36px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .chatbox-appear-on-top {
+    top: 323px;
+    right: 28px;
+  }
+
+  .chatbox-appear-on-bottom {
+    top: 576px;
+    right: 33px;
+  }
+}
