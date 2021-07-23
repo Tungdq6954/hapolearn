@@ -216,6 +216,18 @@
       background-color: #b2d235;
       color: white; }
 
+@media only screen and (max-width: 415px) {
+  .login-register .close-button-login-register {
+    top: -11px;
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .login-register .close-button-login-register i {
+      font-size: 15px; } }
+
 .logo-messenger {
   position: fixed;
   right: 0;

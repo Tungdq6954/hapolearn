@@ -184,3 +184,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 415px) {
+  .login-register {
+    .close-button-login-register {
+      top: -11px;
+      right: -8px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 15px;
+      }
+    }
+  }
+}
