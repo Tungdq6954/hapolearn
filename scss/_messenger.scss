@@ -13,13 +13,13 @@
 
 .chatbox {
   font-family: $font_Open_Sans;
-  position: absolute;
+  position: fixed;
   width: 360px;
   height: 190px;
   background: white;
   box-shadow: 0px 0px 8px $hapo_learn_banner_box_shadow_color;
   border-radius: 23px;
-  z-index: 100;
+  z-index: 5;
 
   .close-button {
     position: absolute;
@@ -110,13 +110,8 @@
   }
 }
 
-.chatbox-appear-on-top {
+.chatbox-appear {
   top: 419px;
-  right: 33px;
-}
-
-.chatbox-appear-on-bottom {
-  top: 676px;
   right: 33px;
 }
 
@@ -127,13 +122,8 @@
     top: 580px;
   }
 
-  .chatbox-appear-on-top {
-    top: 394px;
-    right: 33px;
-  }
-
-  .chatbox-appear-on-bottom {
-    top: 626px;
+  .chatbox-appear {
+    top: 348px;
     right: 33px;
   }
 }
@@ -144,15 +134,5 @@
     right: 36px;
     width: 60px;
     height: 60px;
-  }
-
-  .chatbox-appear-on-top {
-    top: 323px;
-    right: 28px;
-  }
-
-  .chatbox-appear-on-bottom {
-    top: 576px;
-    right: 33px;
   }
 }

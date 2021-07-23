@@ -43,13 +43,7 @@ $(document).ready(function () {
   $('.logo-messenger').click(function () {
     let scrollPosition = $(window).scrollTop();
     $('.chatbox').removeClass('hidden');
-    if (scrollPosition >= 0 && scrollPosition <= 365) {
-      $('.chatbox').removeClass('chatbox-appear-on-bottom');
-      $('.chatbox').addClass('chatbox-appear-on-top');
-    } else {
-      $('.chatbox').removeClass('chatbox-appear-on-top');
-      $('.chatbox').addClass('chatbox-appear-on-bottom');
-    }
+    $('.chatbox').addClass('chatbox-appear');
   });
 
   $('.close-button').on('click', function () {
