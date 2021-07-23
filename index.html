@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -51,7 +52,8 @@
                         <a class="nav-link text-secondary" href="#">LESSON DETAIL</a>
                     </li>
                     <li class="nav-item mr-sm-3">
-                        <a class="nav-link text-secondary" href="#">LOGIN/REGISTER</a>
+                        <a class="nav-link text-secondary" href="#" data-toggle="modal"
+                            data-target="#login-register">LOGIN/REGISTER</a>
                     </li>
                     <li class="nav-item mr-sm-3">
                         <a class="nav-link text-secondary" href="#">PROFILE</a>
@@ -90,7 +92,8 @@
                 <div class="hapo-text-message">HapoLearn xin chào bạn. <br>
                     Bạn có cần chúng tôi hỗ trợ gì không? </div>
             </div>
-            <a href="#" class="button-messenger"><i class="fab fa-facebook-messenger  mr-2"></i> Đăng nhập vào Messenger</a>
+            <a href="#" class="button-messenger"><i class="fab fa-facebook-messenger  mr-2"></i> Đăng nhập vào
+                Messenger</a>
             <div class="chat-with-hapolearn-in-messenger-txt">Chat với HapoLearn trong Messenger</div>
         </div>
 
@@ -356,6 +359,92 @@
         </div>
         <div class="footer-bottom"> © 2020 HapoLearn, Inc. All rights reserved.</div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade login-register" id="login-register" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-radius-custom">
+                <div class="modal-body p-0">
+                    <button type="button" class="close close-button-login-register" data-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <ul class="nav nav-tabs p-0 login-register-bar" id="myTab" role="tablist">
+                        <li class="nav-item w-50">
+                            <a class="nav-link h-100 active login-nav-tab active-tab" id="login-nav-tab"
+                                data-toggle="tab" href="#login-tab" role="tab" aria-controls="home"
+                                aria-selected="true">LOGIN</a>
+                        </li>
+                        <li class="nav-item w-50">
+                            <a class="nav-link h-100 register-nav-tab" id="register-nav-tab" data-toggle="tab"
+                                href="#register-tab" role="tab" aria-controls="profile"
+                                aria-selected="false">REGISTER</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login-tab" role="tabpanel">
+                            <form>
+                                <div class="form-group mt-4 container">
+                                    <label for="username-login" class="label-text-style">Username:</label>
+                                    <input type="text" class="form-control input-style" id="username-login">
+                                </div>
+                                <div class="form-group container">
+                                    <label for="password-login" class="label-text-style">Password:</label>
+                                    <input type="password" class="form-control input-style" id="password-login">
+                                </div>
+                                <div class="container">
+                                    <div class="form-check d-block">
+                                        <input type="checkbox" class="form-check-input remember-me-login" id="remember-me-login">
+                                        <label class="form-check-label remember-me-label"
+                                            for="remember-me-login">Remember me</label>
+                                        <a href="#" class="d-block forgot-password-txt">Forgot password</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <button type="submit" class="btn button-login">LOGIN</button>
+                                </div>
+                                <div class="mt-4 mb-4 login-with-txt">Login with</div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <a href="#" class="login-with-google"><i class="fab fa-google-plus-g mr-2"></i>
+                                        Google</a>
+                                    <a href="#" class="login-with-facebook"><i class="fab fa-facebook-f mr-2"></i>
+                                        Facebook</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="register-tab" role="tabpanel" aria-labelledby="profile-tab">
+                            <form class="container">
+                                <div class="form-group mt-4">
+                                    <label for="username-register" class="label-text-style">Username:</label>
+                                    <input type="text" class="form-control input-style" id="username-register">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-register" class="label-text-style">Email:</label>
+                                    <input type="email" class="form-control input-style" id="email-register"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password-register" class="label-text-style">Password</label>
+                                    <input type="password" class="form-control input-style" id="password-register">
+                                </div>
+                                <div class="form-group">
+                                    <label for="repeat-password-register" class="label-text-style">Repeat
+                                        Password:</label>
+                                    <input type="password" class="form-control input-style"
+                                        id="repeat-password-register">
+                                </div>
+                                <div class="d-flex mb-5 justify-content-center mt-5">
+                                    <button type="submit" class="btn button-login">REGISTER</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
