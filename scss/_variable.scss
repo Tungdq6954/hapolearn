@@ -47,6 +47,10 @@ $chat_with_hapolearn_in_messenger_txt: #B3B3B3;
   position: fixed;
 }
 
+.active {
+  display: block;
+}
+
 @mixin img-course {
   width: 100%;
   height: 45%;

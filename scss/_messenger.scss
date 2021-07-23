@@ -1,25 +1,22 @@
 .logo-messenger {
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 60px;
   height: 60px;
-  background-image: url(../assets/img/messenger.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  object-fit: scale-down;
   cursor: pointer;
-  z-index: 100;
+  z-index: 5;
+  bottom: 10px;
 }
 
 .chatbox {
   font-family: $font_Open_Sans;
   position: fixed;
-  width: 360px;
-  height: 190px;
   background: white;
   box-shadow: 0px 0px 8px $hapo_learn_banner_box_shadow_color;
   border-radius: 23px;
   z-index: 5;
+  display: none;
 
   .close-button {
     position: absolute;
@@ -72,6 +69,7 @@
     letter-spacing: -0.02em;
     color: $chat_with_hapolearn_in_messenger_txt;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -80,6 +78,7 @@
   align-items: center;
   margin-top: 3px;
   padding-left: 12px;
+  margin-right: 30px;
 
   .hapo-logo-in-message {
     width: 35px;
@@ -110,28 +109,30 @@
 }
 
 .chatbox-appear {
-  top: 419px;
   right: 33px;
+  bottom: 75px;
 }
 
 @media only screen and (max-width: 769px) {
   .logo-messenger {
     width: 50px;
     height: 50px;
-    top: 580px;
   }
 
   .chatbox-appear {
-    top: 348px;
     right: 33px;
+    bottom: 59px;
   }
 }
 
 @media only screen and (max-width: 415px) {
   .logo-messenger {
-    top: 516px;
-    right: 36px;
     width: 60px;
     height: 60px;
+  }
+
+  .chatbox-appear {
+    right: 33px;
+    bottom: 69px;
   }
 }

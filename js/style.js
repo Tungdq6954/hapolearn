@@ -33,21 +33,18 @@ $(document).ready(function () {
       $('.addition-class').addClass('hidden');
     } else {
       {
-        $('.fas.fa-bars').addClass('hidden');
-        $('.fas.fa-times').removeClass('hidden');
+        $('.custom-button-navbar-toggler .fas.fa-bars').addClass('hidden');
+        $('.custom-button-navbar-toggler .fas.fa-times').removeClass('hidden');
         $('.addition-class').removeClass('hidden');
       }
     }
   });
 
   $('.logo-messenger').click(function () {
-    let scrollPosition = $(window).scrollTop();
-    $('.chatbox').removeClass('hidden');
-    $('.chatbox').addClass('chatbox-appear');
+    $('.chatbox').addClass('active');
   });
 
   $('.close-button').on('click', function () {
-    $('.chatbox').removeClass('chatbox-appear-on-top chatbox-appear-on-bottom');
-    $('.chatbox').addClass('hidden');
+    $('.chatbox').removeClass('active');
   })
 });
