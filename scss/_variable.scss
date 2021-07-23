@@ -36,6 +36,11 @@ $hapolearn_txt_in_chatbox: #7F7F7F;
 $background_message: #F1F0F0;
 $button_message_color: #3184F7;
 $chat_with_hapolearn_in_messenger_txt: #B3B3B3;
+$background_color_input: #F2F2F2;
+$border_color_input: #E1E1E1;
+$login_with_color: #DBDBDB;
+$google_color: #DC4E41;
+$facebook_color: #3B5999;
 
 .hidden {
   display: none;
@@ -45,6 +50,10 @@ $chat_with_hapolearn_in_messenger_txt: #B3B3B3;
 
 .position-fixed {
   position: fixed;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 @mixin img-course {
