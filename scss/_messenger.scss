@@ -18,6 +18,10 @@
   z-index: 5;
   display: none;
 
+  &.active {
+    display: block;
+  }
+
   .close-button {
     position: absolute;
     width: 24px;
