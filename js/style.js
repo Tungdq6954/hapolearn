@@ -31,16 +31,18 @@ $(document).ready(function () {
       $('.custom-button-navbar-toggler .fas.fa-bars').removeClass('hidden');
       $('.custom-button-navbar-toggler .fas.fa-times').addClass('hidden');
       $('.addition-class').addClass('hidden');
-      $('body').removeClass('overflow-hidden');
+      $('#body').removeClass('hidden');
+      $('footer').removeClass('hidden');
     } else {
       $('.custom-button-navbar-toggler .fas.fa-bars').addClass('hidden');
       $('.custom-button-navbar-toggler .fas.fa-times').removeClass('hidden');
       $('.addition-class').removeClass('hidden');
-      $('body').addClass('overflow-hidden');
+      $('#body').addClass('hidden');
+      $('footer').addClass('hidden');
     }
   });
 
-  $('.logo-messenger').click(function () {
+  $('.logo-messenger').on('click', function () {
     $('.chatbox').addClass('active');
   });
 
