@@ -49,24 +49,24 @@
     border-radius: 0;
   }
 
-  .remember-me-login {
+  .remember-me-login-checkbox {
     position: relative;
     cursor: pointer;
   }
 
-  .remember-me-login:before {
+  .remember-me-login-checkbox:before {
     content: "";
     display: block;
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 0;
+    left: -2px;
     top: -2px;
     border: 1px solid $border_color_input;
     background-color: white;
   }
 
-  .remember-me-login:checked:before {
+  .remember-me-login-checkbox:checked:before {
     content: "";
     display: block;
     position: absolute;
@@ -77,7 +77,7 @@
     background-color: $button_color;
   }
 
-  .remember-me-login:checked:after {
+  .remember-me-login-checkbox:checked:after {
     content: "";
     display: block;
     width: 6px;

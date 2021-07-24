@@ -50,14 +50,9 @@
   }
 
   .custom-card-style {
-    .img-frontend-course {
-      @include img-course-at-769px();
-    }
 
-    .img-laravel-course {
-      @include img-course-at-769px();
-    }
-
+    .img-frontend-course,
+    .img-laravel-course,
     .img-php-course {
       @include img-course-at-769px();
     }
@@ -82,9 +77,17 @@
     margin-left: 40px;
     margin-right: 40px;
 
+    .img-frontend-course,
+    .img-laravel-course,
+    .img-php-course {
+      @include img-course-at-415px();
+    }
+
     .title-course {
-      font-size: 16px;
+      font-size: 23px;
       margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .content-course {
@@ -97,8 +100,7 @@
     }
 
     .button-course {
-      margin: 0 auto 39px auto;
-      font-size: 11px;
+      @include button-course-in-415px;
     }
   }
 }

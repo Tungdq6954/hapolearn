@@ -36,9 +36,7 @@
       margin-left: 10px;
     }
   }
-}
 
-.other-courses {
   .css-course {
     background: $css_course_color;
     @include img-course();
@@ -82,14 +80,8 @@
       font-size: 50px;
     }
 
-    .css-course {
-      @include img-course-at-769px();
-    }
-
-    .rails-course {
-      @include img-course-at-769px();
-    }
-
+    .css-course,
+    .rails-course,
     .java-course {
       @include img-course-at-769px();
     }
@@ -123,12 +115,29 @@
       font-size: 40px;
     }
 
+    .css-course,
+    .rails-course,
+    .java-course {
+      @include img-course-at-415px();
+    }
+
+    .title-course {
+      font-size: 23px;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     a.view-all-courses {
       font-size: 22px;
 
       .right-arow {
         font-size: 20px;
       }
+    }
+
+    .button-course {
+      @include button-course-in-415px;
     }
   }
 }

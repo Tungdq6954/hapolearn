@@ -30,7 +30,7 @@
 }
 
 .feedback-slide {
-  width: 80%;
+  width: 90%;
 
   .comment {
     background: $white_color;
@@ -43,12 +43,15 @@
     position: relative;
 
     .comment-text {
-      padding-left: 25px;
+      padding-left: 16px;
       padding-right: 13px;
       border-left: 5px solid $vertical_in_comment;
       margin-left: 20px;
+      margin-top: 16px;
       height: 121px;
       padding-top: 23px;
+      font-size: 15px;
+      color: black;
     }
   }
 
@@ -89,7 +92,7 @@
 
   .slide-arrow {
     position: absolute;
-    top: 30%;
+    top: 35%;
     margin-top: -15px;
   }
 
@@ -160,6 +163,10 @@
       width: 60%;
     }
   }
+
+  .feedback-slide {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -184,20 +191,16 @@
     }
 
     .comment {
-      height: 120px;
+      height: 130px;
       margin-right: 1px;
 
       .comment-text {
-        font-size: 10px;
-        height: 76px;
+        font-size: 14px;
+        font-weight: normal;
+        height: 100px;
         padding-top: 7px;
+        margin-top: 16px;
       }
-    }
-
-    .slide-arrow {
-      position: absolute;
-      top: 30%;
-      margin-top: -15px;
     }
 
     .prev-arrow {
