@@ -73,7 +73,7 @@
     width: 20px;
     height: 20px;
     top: -2px;
-    left: 0;
+    left: -2px;
     background-color: $button_color;
   }
 
@@ -87,7 +87,7 @@
     transform: rotate(45deg);
     position: absolute;
     top: 2px;
-    left: 7px;
+    left: 5px;
   }
 
   .forgot-password-txt {
