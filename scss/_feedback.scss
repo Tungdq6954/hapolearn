@@ -16,6 +16,7 @@
     width: fit-content;
     padding-bottom: 12px;
     margin-bottom: 17px;
+    text-shadow: 3px 3px 5px $hapo_learn_titile_color;
   }
 
   .feedback-content {
@@ -30,7 +31,7 @@
 }
 
 .feedback-slide {
-  width: 90%;
+  width: 100%;
 
   .comment {
     background: $white_color;
@@ -94,6 +95,7 @@
     position: absolute;
     top: 35%;
     margin-top: -15px;
+    cursor: pointer;
   }
 
   .prev-arrow {

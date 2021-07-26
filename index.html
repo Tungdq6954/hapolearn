@@ -25,9 +25,9 @@
 
 <body>
     <!-- header -->
-    <header id="header" class="container position-relative p-0 header">
+    <header id="header" class="container-fluid position-relative p-0 header">
         <nav class="navbar navbar-expand-sm navbar-light bg-white">
-            <a class="navbar-brand m-0 custom-navbar-brand" href="#">
+            <a class="navbar-brand custom-navbar-brand" href="#">
                 <img src="./assets/img/hapo_Learn.png" alt="Hapo_Learn">
             </a>
             <button class="navbar-toggler custom-button-navbar-toggler" type="button" data-toggle="collapse"
@@ -38,24 +38,24 @@
             </button>
 
             <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-sm-3">
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                    <li class="nav-item mr-sm-5">
                         <a class="nav-link text-secondary" href="#">HOME</a>
                     </li>
-                    <li class="nav-item active mr-sm-3">
+                    <li class="nav-item active mr-sm-5">
                         <a class="nav-link text-secondary active" href="#">ALL COURSES</a>
                     </li>
-                    <li class="nav-item mr-sm-3 addition-class hidden">
+                    <li class="nav-item mr-sm-5 addition-class hidden">
                         <a class="nav-link text-secondary" href="#">LIST lESSON</a>
                     </li>
-                    <li class="nav-item mr-sm-3 addition-class hidden">
+                    <li class="nav-item mr-sm-5 addition-class hidden">
                         <a class="nav-link text-secondary" href="#">LESSON DETAIL</a>
                     </li>
-                    <li class="nav-item mr-sm-3">
+                    <li class="nav-item mr-sm-5">
                         <a class="nav-link text-secondary" href="#" data-toggle="modal"
                             data-target="#login-register">LOGIN/REGISTER</a>
                     </li>
-                    <li class="nav-item mr-sm-3">
+                    <li class="nav-item mr-sm-5">
                         <a class="nav-link text-secondary" href="#">PROFILE</a>
                     </li>
                 </ul>
@@ -79,7 +79,7 @@
                     </a>
                 </div>
             </div>
-
+            <div class="background-linear-gradient"></div>
         </div>
 
         <!-- messenger -->
@@ -97,8 +97,8 @@
             <div class="chat-with-hapolearn-in-messenger-txt">Chat với HapoLearn trong Messenger</div>
         </div>
 
-        <div class="main-courses">
-            <div class="row mr-lg-5 ml-lg-5 mb-0 mr-0 ml-0 custom-card-row">
+        <div class="container main-courses">
+            <div class="row mb-0 mr-0 ml-0 custom-card-row">
                 <div class="col-sm-4 mb-4 d-flex justify-content-center">
                     <div class="card custom-card-style">
                         <img src="./assets/img/rectangle_7.png" class="card-img-top img-frontend-course" alt="fontend">
@@ -144,11 +144,11 @@
             </div>
         </div>
 
-        <div class="other-courses">
+        <div class="container other-courses">
             <div class="d-flex justify-content-center">
                 <div class="heading-other-courses">Other courses</div>
             </div>
-            <div class="row mr-lg-5 ml-lg-5 mb-0 mr-0 ml-0 custom-card-row">
+            <div class="row mb-0 mr-0 ml-0 custom-card-row">
                 <div class="col-sm-4 mb-4 d-flex justify-content-center">
                     <div class="card custom-card-style">
                         <img src="./assets/img/css_course.png" class="card-img-top css-course" alt="css">
@@ -198,7 +198,7 @@
         <div class="p-0 why-hapolearn">
             <div class="img-laptop"></div>
             <div class="row m-0 d-flex align-items-center w-100 h-100">
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-flex flex-column align-items-end">
                     <div class="title-why-hapolearn">Why HapoLearn?</div>
                     <div class="reasons-for-why-hapolearn">
                         <span class="each-reason"><i class="fas fa-check-circle mr-2"></i> Interactive lessons,
@@ -224,7 +224,7 @@
             </div>
         </div>
 
-        <div class="d-flex flex-column align-items-center mt-5 mb-5 p-0 feedback">
+        <div class="container d-flex flex-column align-items-center mt-5 mb-5 p-0 feedback">
             <div class="feedback-titile">Feedback</div>
             <div class="feedback-content">What other students turned professionals have to say about us after
                 learning with us and reaching their goals</div>
@@ -304,13 +304,13 @@
             </div>
         </div>
 
-        <div class="become-a-member">
+        <div class="container-fluid become-a-member">
             <div class="become-a-member-tilte">Become a member of our
                 growing community!</div>
             <a href="#" class="become-a-member-button">Start Learning Now!</a>
         </div>
 
-        <div class="statistic p-0">
+        <div class="container-fluid statistic p-0">
             <div class="statistic-title">Statistic</div>
             <div class="row m-0 mt-4">
                 <div class="col-sm-4 d-flex flex-column justify-content-center align-items-center">
@@ -329,7 +329,7 @@
         </div>
     </div>
 
-    <footer class="p-0 footer">
+    <footer class="container-fluid p-0 footer">
         <div class="p-0 footer-top">
             <div class="m-0 row height-of-footer-top">
                 <div class="col-sm-4 d-flex flex-column align-items-center style-hapolearn-img-and-slogan">

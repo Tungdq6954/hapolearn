@@ -8,8 +8,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
-$font_Open_Sans: "Open Sans",
-sans-serif;
+$font_Open_Sans: "Open Sans",sans-serif;
 $font_UTM_BryantLG: "utm_bryantlgregular";
 $white_color: #ffffff;
 $text_color: #505353;
@@ -40,7 +39,10 @@ $background_color_input: #F2F2F2;
 $border_color_input: #E1E1E1;
 $login_with_color: #DBDBDB;
 $google_color: #DC4E41;
+$google_hover_color: #a22014;
 $facebook_color: #3B5999;
+$facebook_hover_color: #1f3669;
+$messenger_button_hover_color: #1d56a7;
 
 .hidden {
   display: none;

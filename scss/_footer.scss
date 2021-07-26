@@ -57,13 +57,18 @@
   padding-left: 72px;
 
   .style-a-tag {
-    text-decoration: 0;
+    text-decoration: none;
     color: white;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
+    transition: font-size 0.5s;
+
+    &:hover {
+      font-size: 25px;
+    }
   }
 }
 

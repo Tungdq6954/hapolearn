@@ -63,6 +63,10 @@
     margin-right: auto;
     margin-top: 29px;
     cursor: pointer;
+
+    &:hover {
+      background-color: $messenger_button_hover_color;
+    }
   }
 
   .chat-with-hapolearn-in-messenger-txt {

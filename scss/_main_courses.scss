@@ -2,7 +2,7 @@
   width: 100%;
 
   .custom-card-row {
-    margin-top: 100px;
+    margin-top: 62px;
   }
 }
 
@@ -73,6 +73,12 @@
 }
 
 @media only screen and (max-width: 415px) {
+  .main-courses {
+    .custom-card-row {
+      margin-top: 20px;
+    }
+  }
+
   .custom-card-style {
     margin-left: 40px;
     margin-right: 40px;

@@ -156,10 +156,18 @@
 
   .login-with-google {
     background: $google_color;
+
+    &:hover {
+      background-color: $google_hover_color;
+    }
   }
 
   .login-with-facebook {
     background: $facebook_color;
+
+    &:hover {
+      background-color: $facebook_hover_color;
+    }
   }
 }
 
