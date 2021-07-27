@@ -1,6 +1,7 @@
 .other-courses {
   width: 100%;
   font-family: $font_UTM_BryantLG;
+  margin-top: 25px;
 
   .heading-other-courses {
     display: flex;
@@ -13,7 +14,8 @@
     margin-top: 40px;
     border-bottom: 6px solid $button_color;
     width: fit-content;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
     -webkit-text-stroke-width: 2px;
   }
 
@@ -73,20 +75,31 @@
     @include button-course-mixin();
 
     &:hover {
-      background: $button_hover_color;
+      color: $text_color;
     }
   }
 }
 
 @media only screen and (max-width: 769px) {
   .other-courses {
+    margin-top: -15px;
+
     .custom-card-row {
       margin-top: 0px;
       padding-top: 35px;
     }
 
+    .custom-card-style {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
     .heading-other-courses {
       font-size: 50px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 3px solid $title_color;
+      line-height: 80px;
     }
 
     .css-course,
@@ -98,6 +111,7 @@
     .title-course {
       font-size: 16px;
       margin: 0;
+      -webkit-text-stroke-width: 0.5px;
     }
 
     .content-course {
@@ -110,7 +124,9 @@
 
     a.view-all-courses {
       font-size: 28px;
-      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-width: 0.4px;
+      line-height: 0px;
+      margin-top: 22px;
 
       .right-arrow {
         width: 34px;
@@ -122,6 +138,13 @@
 
 @media only screen and (max-width: 415px) {
   .other-courses {
+    margin-top: -20px;
+    
+    .custom-card-style {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
     .heading-other-courses {
       font-size: 40px;
     }

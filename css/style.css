@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @font-face {
   font-family: "utm_bryantlgregular";
   src: url(../assets/fonts/utm_bryantlg-webfont.woff2) format("woff2"), url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
@@ -17,7 +18,7 @@
 
 .header .custom-navbar-brand {
   margin-left: 6%;
-  height: 70px; }
+  height: 90px; }
   .header .custom-navbar-brand img {
     width: 100%;
     height: 100%;
@@ -25,11 +26,11 @@
 
 .header .custom-navbar-collapse {
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   z-index: 10;
   background-color: #ffffff;
-  padding-right: 7%; }
+  padding-right: 4%; }
 
 .header .custom-button-navbar-toggler {
   border: 0;
@@ -40,42 +41,49 @@
   background-color: #b2d235;
   border-radius: 17px; }
 
+.navbar-light .navbar-nav .nav-link {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .navbar-light .navbar-nav .nav-link.active {
   color: #ffffff !important;
   background-color: #b2d235;
-  border-radius: 17px;
-  padding-left: 18px;
-  padding-right: 18px; }
+  border-radius: 17px; }
 
 @media only screen and (max-width: 769px) {
   .header {
+    background: #E5E5E5;
     position: relative;
     height: 130px; }
     .header .custom-navbar-brand {
-      width: 36%;
       position: absolute;
-      left: 25%;
-      top: 8px; }
+      left: 28%;
+      top: 0;
+      height: 63px; }
     .header .custom-navbar-collapse {
       position: absolute;
-      left: 17%;
-      top: 72px;
-      margin-left: 0; }
-  .navbar-light .navbar-nav .nav-link.active {
-    padding-left: 10px;
-    padding-right: 10px; } }
+      left: 15%;
+      top: 70px;
+      margin-left: 0;
+      background: #E5E5E5; }
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 415px) {
   .header {
-    height: auto; }
+    height: 65px;
+    background: white; }
     .header .custom-navbar-collapse {
       position: absolute;
       left: 0%;
-      top: 44px;
+      top: 50px;
       width: 100%;
       margin-left: 0;
       height: 100vh;
-      padding-left: 30px; }
+      padding-left: 0;
+      background: white;
+      padding-right: 0; }
       .header .custom-navbar-collapse a {
         justify-content: center;
         display: flex;
@@ -83,9 +91,17 @@
         align-items: center; }
     .header .custom-navbar-brand {
       position: absolute;
-      left: 26%;
-      top: 0;
-      height: 41px; } }
+      left: 22%;
+      top: 8px;
+      height: 45px; }
+    .header .custom-navbar-height-in-414px {
+      height: 100%; }
+  .navbar-light .navbar-nav .nav-link.active {
+    background: white;
+    color: #b2d235 !important; }
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .login-register {
   font-family: "utm_bryantlgregular";
@@ -113,7 +129,11 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.02em;
-    color: #505353; }
+    color: #505353;
+    margin-left: 5%; }
+  .login-register .remember-me-and-forgot-password-div {
+    margin-left: 8%;
+    margin-right: 8%; }
   .login-register .remember-me-label {
     font-weight: bold;
     font-size: 18px;
@@ -127,7 +147,10 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    height: 60px; }
+    height: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
   .login-register .remember-me-login-checkbox {
     position: relative;
     cursor: pointer; }
@@ -166,7 +189,8 @@
   .login-register .forgot-password-txt {
     text-decoration: underline;
     color: #b2d235;
-    float: right; }
+    float: right;
+    font-size: 18px; }
     .login-register .forgot-password-txt:hover {
       color: #748b18; }
   .login-register .button-login {
@@ -200,7 +224,7 @@
     margin-left: .25em; }
   .login-register .login-with-google,
   .login-register .login-with-facebook {
-    width: 94%;
+    width: 84%;
     height: 55px;
     font-weight: bold;
     font-size: 19px;
@@ -282,7 +306,8 @@
     text-align: center;
     cursor: pointer;
     right: 10px;
-    top: 10px; }
+    top: 10px;
+    line-height: 25px; }
   .chatbox .hapolearn-txt-in-chatbox {
     font-weight: 600;
     font-size: 12px;
@@ -290,8 +315,10 @@
     letter-spacing: -0.02em;
     color: #7F7F7F;
     padding-top: 15px;
-    padding-left: 64px; }
+    padding-left: 73px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
   .chatbox .button-messenger {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: block;
     width: 276px;
     height: 37px;
@@ -323,8 +350,9 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #B3B3B3;
-    margin-top: 10px;
-    margin-bottom: 20px; }
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 .message-from-hapolearn {
   display: flex;
@@ -353,8 +381,9 @@
     line-height: 17px;
     letter-spacing: -0.02em;
     color: #505353;
-    justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px; }
 
 .chatbox-appear {
   right: 63px;
@@ -434,7 +463,7 @@
     cursor: pointer;
     text-decoration: none; }
     .hapo-learn-banner .button-hapo-learn-banner:hover {
-      background: #748b18; }
+      color: #505353; }
   .hapo-learn-banner .background-linear-gradient {
     background-image: linear-gradient(0deg, #e5e5e5, white);
     height: 130px; }
@@ -446,16 +475,18 @@
       background-image: url(../assets/img/hapo_Learn_banner_2.png);
       height: 100%; }
     .hapo-learn-banner .content-of-hapo-learn-banner {
-      height: 80%; }
+      height: 90%; }
     .hapo-learn-banner .hapo-learn-title {
       font-size: 28px; }
     .hapo-learn-banner .hapo-learn-subtitle {
-      font-size: 25px; }
+      font-size: 28px; }
     .hapo-learn-banner .hapo-learn-content {
-      font-size: 14px; }
+      font-size: 15px;
+      margin-top: 7px;
+      margin-bottom: 23px; }
     .hapo-learn-banner .button-hapo-learn-banner {
       font-size: 14px;
-      width: 173px;
+      width: 183px;
       height: 40px;
       line-height: 36px; }
     .hapo-learn-banner .background-linear-gradient {
@@ -473,7 +504,8 @@
       position: relative;
       height: auto;
       align-items: center;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-top: 10px; }
     .hapo-learn-banner .hapo-learn-title {
       font-size: 28px; }
     .hapo-learn-banner .hapo-learn-subtitle {
@@ -485,15 +517,15 @@
         object-fit: fill; }
     .hapo-learn-banner .hapo-learn-content {
       font-size: 18px;
-      margin-top: 7px;
-      margin-bottom: 16px; }
+      margin-top: 12px;
+      margin-bottom: 24px; }
     .hapo-learn-banner .button-hapo-learn-banner {
       font-size: 18px;
       width: 100%;
-      height: 45px;
+      height: 47px;
       line-height: 43px; }
     .hapo-learn-banner .background-linear-gradient {
-      height: 145px; } }
+      height: 160px; } }
 
 .main-courses {
   width: 100%; }
@@ -504,7 +536,9 @@
   font-family: "utm_bryantlgregular";
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin-right: 15px;
+  margin-left: 15px; }
   .custom-card-style .img-frontend-course {
     background: #3f6185;
     width: 100%;
@@ -532,7 +566,8 @@
     line-height: 37px;
     letter-spacing: -0.05em;
     color: #b2d235;
-    margin: 10px 10px 10px 10px; }
+    margin: 10px 10px 10px 10px;
+    -webkit-text-stroke-width: 1px; }
   .custom-card-style .content-course {
     font-weight: bold;
     font-size: 14px;
@@ -560,41 +595,45 @@
     margin-top: 15px;
     margin-bottom: 38px; }
     .custom-card-style .button-course:hover {
-      background: #748b18; }
+      color: #505353; }
 
 @media only screen and (max-width: 769px) {
   .main-courses .custom-card-row {
     margin-top: 0px;
     padding-top: 35px; }
-  .custom-card-style .img-frontend-course,
-  .custom-card-style .img-laravel-course,
-  .custom-card-style .img-php-course {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 125px; }
-  .custom-card-style .title-course {
-    font-size: 16px;
-    margin: 0; }
-  .custom-card-style .content-course {
-    font-size: 14px;
-    margin: 0 15px 10px 15px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; }
-  .custom-card-style .button-course {
-    margin: 0 auto 24px auto;
-    font-size: 13px;
-    height: 30px; } }
+  .custom-card-style {
+    margin-right: 5px;
+    margin-left: 5px; }
+    .custom-card-style .img-frontend-course,
+    .custom-card-style .img-laravel-course,
+    .custom-card-style .img-php-course {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 125px; }
+    .custom-card-style .title-course {
+      font-size: 16px;
+      margin: 0;
+      -webkit-text-stroke-width: 0.4px; }
+    .custom-card-style .content-course {
+      font-size: 14px;
+      margin: 0 15px 10px 15px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical; }
+    .custom-card-style .button-course {
+      margin: 0 auto 24px auto;
+      font-size: 13px;
+      height: 30px; } }
 
 @media only screen and (max-width: 415px) {
   .main-courses .custom-card-row {
-    margin-top: 20px; }
+    margin-top: 54px; }
   .custom-card-style {
-    margin-left: 40px;
-    margin-right: 40px; }
+    margin-left: 25px;
+    margin-right: 25px; }
     .custom-card-style .img-frontend-course,
     .custom-card-style .img-laravel-course,
     .custom-card-style .img-php-course {
@@ -619,7 +658,8 @@
 
 .other-courses {
   width: 100%;
-  font-family: "utm_bryantlgregular"; }
+  font-family: "utm_bryantlgregular";
+  margin-top: 25px; }
   .other-courses .heading-other-courses {
     display: flex;
     justify-content: center;
@@ -631,13 +671,16 @@
     margin-top: 40px;
     border-bottom: 6px solid #b2d235;
     width: fit-content;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
     -webkit-text-stroke-width: 2px; }
   .other-courses .custom-card-style {
     font-family: "utm_bryantlgregular";
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-left: 15px; }
   .other-courses a.view-all-courses {
     font-weight: bold;
     font-size: 40px;
@@ -680,7 +723,8 @@
     line-height: 37px;
     letter-spacing: -0.05em;
     color: #b2d235;
-    margin: 10px 10px 10px 10px; }
+    margin: 10px 10px 10px 10px;
+    -webkit-text-stroke-width: 1px; }
   .other-courses .content-course {
     font-weight: bold;
     font-size: 14px;
@@ -708,67 +752,84 @@
     margin-top: 15px;
     margin-bottom: 38px; }
     .other-courses .button-course:hover {
-      background: #748b18; }
+      color: #505353; }
 
 @media only screen and (max-width: 769px) {
-  .other-courses .custom-card-row {
-    margin-top: 0px;
-    padding-top: 35px; }
-  .other-courses .heading-other-courses {
-    font-size: 50px; }
-  .other-courses .css-course,
-  .other-courses .rails-course,
-  .other-courses .java-course {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 125px; }
-  .other-courses .title-course {
-    font-size: 16px;
-    margin: 0; }
-  .other-courses .content-course {
-    font-size: 14px;
-    margin: 0 15px 10px 15px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; }
-  .other-courses .button-course {
-    margin: 0 auto 24px auto;
-    font-size: 13px;
-    height: 30px; }
-  .other-courses a.view-all-courses {
-    font-size: 28px;
-    -webkit-text-stroke-width: 0.5px; }
-    .other-courses a.view-all-courses .right-arrow {
-      width: 34px;
-      height: 19px; } }
+  .other-courses {
+    margin-top: -15px; }
+    .other-courses .custom-card-row {
+      margin-top: 0px;
+      padding-top: 35px; }
+    .other-courses .custom-card-style {
+      margin-left: 5px;
+      margin-right: 5px; }
+    .other-courses .heading-other-courses {
+      font-size: 50px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 3px solid #b2d235;
+      line-height: 80px; }
+    .other-courses .css-course,
+    .other-courses .rails-course,
+    .other-courses .java-course {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 125px; }
+    .other-courses .title-course {
+      font-size: 16px;
+      margin: 0;
+      -webkit-text-stroke-width: 0.5px; }
+    .other-courses .content-course {
+      font-size: 14px;
+      margin: 0 15px 10px 15px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical; }
+    .other-courses .button-course {
+      margin: 0 auto 24px auto;
+      font-size: 13px;
+      height: 30px; }
+    .other-courses a.view-all-courses {
+      font-size: 28px;
+      -webkit-text-stroke-width: 0.4px;
+      line-height: 0px;
+      margin-top: 22px; }
+      .other-courses a.view-all-courses .right-arrow {
+        width: 34px;
+        height: 19px; } }
 
 @media only screen and (max-width: 415px) {
-  .other-courses .heading-other-courses {
-    font-size: 40px; }
-  .other-courses .css-course,
-  .other-courses .rails-course,
-  .other-courses .java-course {
-    height: 160px; }
-  .other-courses .title-course {
-    font-size: 23px;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .other-courses a.view-all-courses {
-    font-size: 22px;
-    font-weight: normal;
-    -webkit-text-stroke-width: 1.5px; }
-    .other-courses a.view-all-courses .right-arrow {
-      width: 31px;
-      height: 16px; }
-  .other-courses .button-course {
-    margin: 20px auto 39px auto;
-    font-size: 17px;
-    height: 43px;
-    width: 76%; } }
+  .other-courses {
+    margin-top: -20px; }
+    .other-courses .custom-card-style {
+      margin-left: 25px;
+      margin-right: 25px; }
+    .other-courses .heading-other-courses {
+      font-size: 40px; }
+    .other-courses .css-course,
+    .other-courses .rails-course,
+    .other-courses .java-course {
+      height: 160px; }
+    .other-courses .title-course {
+      font-size: 23px;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .other-courses a.view-all-courses {
+      font-size: 22px;
+      font-weight: normal;
+      -webkit-text-stroke-width: 1.5px; }
+      .other-courses a.view-all-courses .right-arrow {
+        width: 31px;
+        height: 16px; }
+    .other-courses .button-course {
+      margin: 20px auto 39px auto;
+      font-size: 17px;
+      height: 43px;
+      width: 76%; } }
 
 .why-hapolearn {
   width: 100%;
@@ -794,7 +855,8 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #ffffff;
-    margin-top: 200px; }
+    margin-top: 200px;
+    -webkit-text-stroke-width: 2px; }
   .why-hapolearn .reasons-for-why-hapolearn {
     display: flex;
     flex-direction: column; }
@@ -878,7 +940,9 @@
   position: relative;
   width: 100%;
   height: 544px;
-  font-family: "utm_bryantlgregular"; }
+  font-family: "utm_bryantlgregular";
+  margin-top: 100px;
+  margin-bottom: 30px; }
   .feedback .feedback-titile {
     font-weight: bold;
     font-size: 80px;
@@ -1001,17 +1065,23 @@
     color: #F2C54F; }
 
 @media only screen and (max-width: 769px) {
-  .feedback .feedback-titile {
-    font-size: 50px; }
-  .feedback .feedback-content {
-    font-size: 18px;
-    width: 60%; }
+  .feedback {
+    margin-top: 65px;
+    margin-bottom: -45px; }
+    .feedback .feedback-titile {
+      font-size: 50px;
+      padding-bottom: 0;
+      line-height: 73px; }
+    .feedback .feedback-content {
+      font-size: 18px;
+      width: 70%;
+      margin-bottom: 16px; }
   .feedback-slide {
     width: 80%; } }
 
 @media only screen and (max-width: 415px) {
   .feedback {
-    height: 469px; }
+    height: 500px; }
     .feedback .feedback-titile {
       font-size: 50px; }
     .feedback .feedback-content {
@@ -1067,7 +1137,7 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #ffffff;
-    width: 60%; }
+    width: 671px; }
   .become-a-member .become-a-member-button {
     background: #ffffff;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1147,15 +1217,18 @@
     display: block; }
 
 @media only screen and (max-width: 769px) {
-  .statistic .statistic-title {
-    font-size: 50px;
-    padding-bottom: 0; }
-  .statistic .statistic-subtitle {
-    font-size: 40px;
-    width: 200px; }
-  .statistic .statistic-number {
-    font-size: 40px;
-    width: 200px; } }
+  .statistic {
+    height: 383px; }
+    .statistic .statistic-title {
+      font-size: 50px;
+      padding-bottom: 0;
+      line-height: 66px; }
+    .statistic .statistic-subtitle {
+      font-size: 40px;
+      width: 200px; }
+    .statistic .statistic-number {
+      font-size: 40px;
+      width: 200px; } }
 
 @media only screen and (max-width: 415px) {
   .statistic {

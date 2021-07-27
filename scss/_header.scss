@@ -1,7 +1,7 @@
 .header {
   .custom-navbar-brand {
     margin-left: 6%;
-    height: 70px;
+    height: 90px;
 
     img {
       width: 100%;
@@ -12,11 +12,11 @@
 
   .custom-navbar-collapse {
     font-family: $font_Open_Sans;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     z-index: 10;
     background-color: $white_color;
-    padding-right: 7%;
+    padding-right: 4%;
   }
 
   .custom-button-navbar-toggler {
@@ -37,54 +37,70 @@
 
 .navbar-light {
   .navbar-nav {
+    .nav-link {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
     .nav-link.active {
       color: $white_color !important;
       background-color: $title_color;
       border-radius: 17px;
-      padding-left: 18px;
-      padding-right: 18px;
     }
   }
 }
 
 @media only screen and (max-width: 769px) {
   .header {
+    background: $background_color_header_in_768px;
     position: relative;
     height: 130px;
 
     .custom-navbar-brand {
-      width: 36%;
       position: absolute;
-      left: 25%;
-      top: 8px;
+      left: 28%;
+      top: 0;
+      height: 63px;
     }
 
     .custom-navbar-collapse {
       position: absolute;
-      left: 17%;
-      top: 72px;
+      left: 15%;
+      top: 70px;
       margin-left: 0;
+      background: $background_color_header_in_768px;
     }
   }
 
-  .navbar-light .navbar-nav .nav-link.active {
-    padding-left: 10px;
-    padding-right: 10px;
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 415px) {
   .header {
-    height: auto;
+    height: 65px;
+    background: white;
 
     .custom-navbar-collapse {
       position: absolute;
       left: 0%;
-      top: 44px;
+      top: 50px;
       width: 100%;
       margin-left: 0;
       height: 100vh;
-      padding-left: 30px;
+      padding-left: 0;
+      background: white;
+      padding-right: 0;
 
       a {
         justify-content: center;
@@ -96,9 +112,23 @@
 
     .custom-navbar-brand {
       position: absolute;
-      left: 26%;
-      top: 0;
-      height: 41px;
+      left: 22%;
+      top: 8px;
+      height: 45px;
     }
+
+    .custom-navbar-height-in-414px {
+      height: 100%;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    background: white;
+    color: $title_color !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

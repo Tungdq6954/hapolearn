@@ -3,6 +3,8 @@
   width: 100%;
   height: 544px;
   font-family: $font_UTM_BryantLG;
+  margin-top: 100px;
+  margin-bottom: 30px;
 
   .feedback-titile {
     font-weight: bold;
@@ -159,13 +161,19 @@
 
 @media only screen and (max-width: 769px) {
   .feedback {
+    margin-top: 65px;
+    margin-bottom: -45px;
+
     .feedback-titile {
       font-size: 50px;
+      padding-bottom: 0;
+      line-height: 73px;
     }
 
     .feedback-content {
       font-size: 18px;
-      width: 60%;
+      width: 70%;
+      margin-bottom: 16px;
     }
   }
 
@@ -176,7 +184,7 @@
 
 @media only screen and (max-width: 415px) {
   .feedback {
-    height: 469px;
+    height: 500px;
 
     .feedback-titile {
       font-size: 50px;

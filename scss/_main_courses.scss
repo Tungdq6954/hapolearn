@@ -40,7 +40,7 @@
     @include button-course-mixin();
 
     &:hover {
-      background: $button_hover_color;
+      color: $text_color;
     }
   }
 }
@@ -54,6 +54,8 @@
   }
 
   .custom-card-style {
+    margin-right: 5px;
+    margin-left: 5px;
 
     .img-frontend-course,
     .img-laravel-course,
@@ -64,6 +66,7 @@
     .title-course {
       font-size: 16px;
       margin: 0;
+      -webkit-text-stroke-width: 0.4px;
     }
 
     .content-course {
@@ -79,13 +82,13 @@
 @media only screen and (max-width: 415px) {
   .main-courses {
     .custom-card-row {
-      margin-top: 20px;
+      margin-top: 54px;
     }
   }
 
   .custom-card-style {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
 
     .img-frontend-course,
     .img-laravel-course,
