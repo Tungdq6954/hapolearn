@@ -3,8 +3,10 @@
   box-sizing: border-box;
   border-radius: 0px 0px 0px 0px;
 
-  .border-radius-custom {
+  .border-modal-custom {
     border-radius: 0;
+    outline: none;
+    border: none;
   }
 
   .close-button-login-register {
@@ -47,6 +49,7 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    height: 60px;
   }
 
   .remember-me-login-checkbox {
@@ -64,6 +67,7 @@
     top: -2px;
     border: 1px solid $border_color_input;
     background-color: white;
+    border-radius: 3px;
   }
 
   .remember-me-login-checkbox:checked:before {
@@ -75,6 +79,7 @@
     top: -2px;
     left: -2px;
     background-color: $button_color;
+    border-radius: 3px;
   }
 
   .remember-me-login-checkbox:checked:after {
@@ -94,6 +99,10 @@
     text-decoration: underline;
     color: $title_color;
     float: right;
+
+    &:hover {
+      color: $button_hover_color;
+    }
   }
 
   .button-login {
@@ -114,14 +123,12 @@
 
   .login-with-txt {
     display: flex;
-    align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 8px;
     letter-spacing: -0.02em;
     color: $text_color;
-
   }
 
   .login-with-txt::before,
@@ -141,8 +148,8 @@
 
   .login-with-google,
   .login-with-facebook {
-    width: 70%;
-    height: 45px;
+    width: 94%;
+    height: 55px;
     font-weight: bold;
     font-size: 19px;
     letter-spacing: -0.02em;
@@ -152,6 +159,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    border-radius: 2px;
   }
 
   .login-with-google {
@@ -189,6 +197,8 @@
     &.active-tab {
       background-color: $title_color;
       color: white;
+      border: none;
+      border-radius: 0;
     }
   }
 }

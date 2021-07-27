@@ -42,6 +42,11 @@ $(document).ready(function () {
     }
   });
 
+  $('.navbar-light .navbar-nav .nav-link').on('click', function(){
+    $('.navbar-light .navbar-nav .nav-link').removeClass('active');
+    $(this).addClass('active');
+  });
+
   $('.logo-messenger').on('click', function () {
     $('.chatbox').addClass('active');
   });

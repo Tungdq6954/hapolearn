@@ -2,7 +2,7 @@
   width: 100%;
 
   .custom-card-row {
-    margin-top: 62px;
+    margin-top: 67px;
   }
 }
 
@@ -30,6 +30,10 @@
 
   .content-course {
     @include content-course-mixin();
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 
   .button-course {

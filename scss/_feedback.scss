@@ -16,7 +16,7 @@
     width: fit-content;
     padding-bottom: 12px;
     margin-bottom: 17px;
-    text-shadow: 3px 3px 5px $hapo_learn_titile_color;
+    -webkit-text-stroke-width: 2px;
   }
 
   .feedback-content {
@@ -26,7 +26,7 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: $text_color;
-    width: 50%;
+    width: 63%;
   }
 }
 
@@ -96,10 +96,11 @@
     top: 35%;
     margin-top: -15px;
     cursor: pointer;
+    color: $icon_arrow_feedback_color;
   }
 
   .prev-arrow {
-    z-index: 10;
+    z-index: 2;
     left: 0;
     width: 30px;
     height: 30px;
@@ -110,7 +111,7 @@
   }
 
   .next-arrow {
-    z-index: 10;
+    z-index: 2;
     right: 0;
     width: 30px;
     height: 30px;
@@ -128,8 +129,9 @@
     background-image: url(../assets/img/ellipse_1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 73px;
-    width: 73px;
+    height: 60px;
+    width: 60px;
+    margin-left: 11px;
   }
 
   .customer-name {
@@ -137,6 +139,7 @@
     font-size: 20px;
     line-height: 25px;
     color: $hapo_learn_titile_color;
+    -webkit-text-stroke-width: 0.5px;
   }
 
   .customer-languge {
