@@ -134,15 +134,15 @@
 
 @media only screen and (max-width: 769px) {
   .logo-messenger {
-    width: 50px;
-    height: 50px;
-    right: 30px;
+    width: 80px;
+    height: 80px;
+    right: 12px;
     bottom: 40px;
   }
 
   .chatbox-appear {
-    right: 33px;
-    bottom: 100px;
+    right: 23px;
+    bottom: 122px;
   }
 }
 
@@ -150,10 +150,12 @@
   .logo-messenger {
     width: 60px;
     height: 60px;
+    bottom: 0px;
+    right: 0px;
   }
 
   .chatbox-appear {
     right: 23px;
-    bottom: 103px;
+    bottom: 62px;
   }
 }

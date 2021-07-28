@@ -210,12 +210,22 @@
       color: white;
       border: none;
       border-radius: 0;
+      height: 100%;
     }
   }
 }
 
 @media only screen and (max-width: 415px) {
   .login-register {
+    .border-modal-custom {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .input-style {
+      height: 45px;
+    }
+  
     .close-button-login-register {
       top: -11px;
       right: -8px;
@@ -227,6 +237,37 @@
 
       i {
         font-size: 15px;
+      }
+    }
+
+    .label-text-style {
+      font-size: 18px;
+    }
+
+    .remember-me-label {
+      font-size: 16px;
+    }
+
+    .forgot-password-txt {
+      font-size: 16px;
+    }
+
+    .login-with-google,
+    .login-with-facebook {
+      height: 45px;
+    }
+  }
+
+  .login-register-bar {
+    height: 60px;
+  
+    .login-nav-tab,
+    .register-nav-tab {
+      font-size: 22px;
+      line-height: 41px;
+  
+      &.active-tab {
+        height: 60px;
       }
     }
   }

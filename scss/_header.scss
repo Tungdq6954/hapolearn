@@ -67,7 +67,7 @@
   .header {
     background: $background_color_header_in_768px;
     position: relative;
-    height: 130px;
+    height: 154px;
 
     .custom-navbar {
       background: $background_color_header_in_768px;
@@ -76,14 +76,14 @@
     .custom-navbar-brand {
       position: absolute;
       left: 28%;
-      top: 0;
+      top: 26px;
       height: 63px;
     }
 
     .custom-navbar-collapse {
       position: absolute;
       left: 18%;
-      top: 70px;
+      top: 92px;
       margin-left: 0;
       background: $background_color_header_in_768px;
     }

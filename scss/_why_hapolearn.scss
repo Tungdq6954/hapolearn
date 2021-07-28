@@ -57,7 +57,7 @@
 
 @media only screen and (max-width: 769px) {
   .why-hapolearn {
-    height: 440px;
+    height: 430px;
 
     .img-laptop {
       width: 400px;
@@ -73,12 +73,13 @@
       margin-left: auto;
       margin-right: auto;
       z-index: 2;
-      top: 8%;
+      top: -16px;
+      padding-left: 90px;
       margin-bottom: 0;
     }
 
     .reasons-for-why-hapolearn {
-      margin-top: 94px;
+      margin-top: 46px;
       width: 115%;
 
       .each-reason {
@@ -90,8 +91,9 @@
     }
 
     .img-laptop-ipad-iphone-coffee {
-      height: 246px;
-      margin-top: 180px;
+      height: 263px;
+      margin-top: 144px;
+      background-size: cover;
     }
   }
 }
@@ -115,6 +117,7 @@
       line-height: 40px;
       text-align: start;
       left: 16%;
+      padding-left: 0;
     }
 
     .reasons-for-why-hapolearn {

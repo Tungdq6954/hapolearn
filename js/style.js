@@ -58,7 +58,11 @@ $(document).ready(function () {
   });
 
   $('.logo-messenger').on('click', function () {
-    $('.chatbox').addClass('active');
+    if ($('.chatbox').hasClass('active')) {
+      $('.chatbox').removeClass('active');
+    } else {
+      $('.chatbox').addClass('active');
+    }
   });
 
   $('.close-button').on('click', function () {

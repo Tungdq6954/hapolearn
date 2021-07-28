@@ -34,6 +34,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    height: 82px;
+    width: 258px;
   }
 
   .button-course {
@@ -67,6 +69,7 @@
       font-size: 16px;
       margin: 0;
       -webkit-text-stroke-width: 0.4px;
+      margin-top: 5px;
     }
 
     .content-course {
@@ -99,17 +102,19 @@
     .title-course {
       font-size: 23px;
       margin: 0;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 10px;
     }
 
     .content-course {
       font-size: 14px;
-      margin: 0 31px 10px 31px;
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
+      width: 272px;
+      height: 80px;
+      margin: 0 15px 0 15px;
     }
 
     .button-course {
