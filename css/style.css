@@ -435,11 +435,11 @@
   .logo-messenger {
     width: 60px;
     height: 60px;
-    bottom: 0px;
-    right: 0px; }
+    bottom: 11px;
+    right: 11px; }
   .chatbox-appear {
     right: 23px;
-    bottom: 62px; } }
+    bottom: 73px; } }
 
 .hapo-learn-banner {
   position: relative;
