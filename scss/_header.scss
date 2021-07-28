@@ -1,7 +1,14 @@
 .header {
+  height: 90px;
+  
+  .custom-navbar {
+    height: 100%;
+    background: white;
+  }
+
   .custom-navbar-brand {
     margin-left: 6%;
-    height: 90px;
+    height: 78px;
 
     img {
       width: 100%;
@@ -16,7 +23,7 @@
     font-size: 14px;
     z-index: 10;
     background-color: $white_color;
-    padding-right: 4%;
+    padding-right: 6%;
   }
 
   .custom-button-navbar-toggler {
@@ -40,6 +47,8 @@
     .nav-link {
       padding-left: 20px;
       padding-right: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 }
@@ -60,6 +69,10 @@
     position: relative;
     height: 130px;
 
+    .custom-navbar {
+      background: $background_color_header_in_768px;
+    }
+
     .custom-navbar-brand {
       position: absolute;
       left: 28%;
@@ -69,7 +82,7 @@
 
     .custom-navbar-collapse {
       position: absolute;
-      left: 15%;
+      left: 18%;
       top: 70px;
       margin-left: 0;
       background: $background_color_header_in_768px;
@@ -90,6 +103,10 @@
   .header {
     height: 65px;
     background: white;
+
+    .custom-navbar {
+      background: white;
+    }
 
     .custom-navbar-collapse {
       position: absolute;
@@ -115,10 +132,6 @@
       left: 22%;
       top: 8px;
       height: 45px;
-    }
-
-    .custom-navbar-height-in-414px {
-      height: 100%;
     }
   }
 
